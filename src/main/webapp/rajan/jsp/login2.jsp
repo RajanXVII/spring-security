@@ -3,20 +3,16 @@
 <html>
 <title>Login Page</title>
 <head>
-	<link  rel="stylesheet"  href="/css/custom.css"/>
+	<link rel="stylesheet" href="/css/custom.css"/>
 </head>
 	<body>
 		
-		<form:form method="POST" action="${pageContext.request.contextPath}/loginProcessor">
-		<d:if test="${param.error!=null}">
-			<i class="redColor">Sorry!! Wrong credentials</i>
-		</d:if>
-		<p>USERNAME: <input type="text" name="username"/></p>
+		
+		<p class="redColor">USERNAME: <input type="text" name="username"/></p>
 		<p>PASSWORD: <input type="password" name="password"/></p>
 		<p><input type="submit" value="SUBMIT"/></p>
 		
-		</form:form> 
-	
+		
 	
 	</body>
 

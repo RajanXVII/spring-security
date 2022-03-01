@@ -27,7 +27,7 @@ public class webAdapterConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().anyRequest().authenticated().
+		http.authorizeRequests().antMatchers("/css/**").permitAll().anyRequest().authenticated().
 		and().
 		formLogin().loginPage("/login").loginProcessingUrl("/loginProcessor").permitAll();
 	}

@@ -22,5 +22,6 @@ public class SpringSecurity1Application {
 	public String login() {
 		return "login";
 	}
+	
 
 }
