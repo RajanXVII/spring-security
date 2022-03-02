@@ -15,7 +15,7 @@ public class webAdapterConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		UserBuilder users=User.withDefaultPasswordEncoder();
-		auth.inMemoryAuthentication().withUser(users.username("Rajan").password("Rajan@17s").roles("User"));
+		auth.inMemoryAuthentication().withUser(users.username("Rajan").password("Rajan@17s").roles("User","Admin"));
 		auth.inMemoryAuthentication().withUser(users.username("Rahul").password("Rahul@17s").roles("Admin"));
 		
 		
