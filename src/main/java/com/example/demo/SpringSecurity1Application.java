@@ -15,8 +15,7 @@ public class SpringSecurity1Application {
 	
 	@GetMapping("/")
 	public String home() {
-		System.out.println("Rajan here");
-		return "test";
+		return "home";
 	}
 	@GetMapping("/login")
 	public String login() {
